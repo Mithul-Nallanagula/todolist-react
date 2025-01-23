@@ -1,3 +1,5 @@
-To run this project on ur screen u have run some commands to run 
+To run this project on ur screen u have to run some commands to run 
 
->
+>cd TODOLISTs
+>npm install
+>npm run dev
