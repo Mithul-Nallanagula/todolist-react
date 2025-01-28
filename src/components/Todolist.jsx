@@ -37,8 +37,9 @@ function List() {
     
     return(
         <>
-            <div className="flex">
-            <i className="ri-todo-fill bg-white  border-2 border-black w-[3vw] h-[2.5vw] text-3xl mt-4 border-r-0 rounded-tl-xl  rounded-bl-xl "></i>
+            <div className="flex  items-center  justify-center  ">
+          
+            <i className="ri-todo-fill bg-white  border-2 border-black w-[3vw] h-[2.5vw] text-3xl mt-4 flex items-center max-w-6xl:text-2xl border-r-0 rounded-tl-xl  rounded-bl-xl  max-w-full max-h-full "></i>
                  
                 <input type="text" value={task} onChange={(val) => setTask(val.target.value)} placeholder="Add your task" className="w-[30vw] h-[2.5vw]  text-center mt-4 border-2 border-r-0 border-black border-l-0 focus:outline-none  focus:ring-0"  ></input>
              <button type="submit" onClick={addoredit} className="border-2 bg-white border-black h-[2.5vw] w-[90px] rounded-br-xl rounded-tr-xl border-l-0 mt-4 text-blue-500">{ edit !== null ? "Update" : "Add"}</button>
